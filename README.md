@@ -28,6 +28,11 @@ sudo chmod -R a+rwx ../docker_odoo16
 
 1. restart server mechine
    ```
-   docker-compose up -d
+   docker restart docker_odoo16-web-1 && \
+   docker restart docker_odoo16-db16-1
    ```
 2. upgrade addon(module)
+
+## Master Password
+
+    Master Password: 12345
