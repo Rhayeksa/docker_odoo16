@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
+from odoo import api, fields, models
 
 
 class Order(models.Model):
@@ -22,7 +22,7 @@ class Order(models.Model):
     )
 
     order_detail_ids = fields.One2many(
-        'rds_market.order.detail',
-        'kode_order_detail',
-        string='Order Detail',
+        'rds_market.product.order',
+        'product_order_code',
+        string='Product Order',
     )

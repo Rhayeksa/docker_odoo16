@@ -2,4 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_rds_market_product,rds_market.product,model_rds_market_product,,1,1,1,1
 access_rds_market_customer,rds_market.customer,model_rds_market_customer,,1,1,1,1
 access_rds_market_order,rds_market.order,model_rds_market_order,,1,1,1,1
-access_rds_market_order_detail,rds_market.order_detail,model_rds_market_order_detail,,1,1,1,1
+access_rds_market_product_order,rds_market.product_order,model_rds_market_product_order,,1,1,1,1

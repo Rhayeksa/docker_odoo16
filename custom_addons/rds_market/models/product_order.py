@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
+from odoo import api, fields, models
 
 
-class OrderDetail(models.Model):
-    _name = 'rds_market.order.detail'
-    _description = 'rds market order detail model'
+class ProductOrder(models.Model):
+    _name = 'rds_market.product.order'
+    _description = 'rds market product order model'
 
     product_order_code = fields.Char(
         string='product_order_code',
