@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="rds_market_menu" name="Rds Market" sequence="1"/>
+
+        <menuitem id="rds_market_order_menu" name="Order" action="order_action" groups="" parent="rds_market_menu" sequence="1"/>
+        <menuitem id="rds_market_customer_menu" name="Customer" action="customer_action" groups="" parent="rds_market_menu" sequence="2"/>
+        <menuitem id="rds_market_product_menu" name="Product" action="product_action" groups="" parent="rds_market_menu" sequence="3"/>
+
+    </data>
+</odoo>

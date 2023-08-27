@@ -1,0 +1,29 @@
+version: "3"
+services:
+  web:
+    container_name: odoo_16
+    image: odoo:16.0
+    # build: ./
+    user: root
+    ports:
+      - "8098:8069"
+    depends_on:
+      - db_odoo_16
+    volumes:
+      - ./config:/etc/odoo
+      - ./custom_addons:/var/lib/odoo/addons/16.0/custom_addons
+    environment:
+      - HOST=db_odoo_16
+      - USER=odoo16
+      - PASSWORD=odoo16
+    # restart: always
+  db_odoo_16:
+    container_name: db_odoo_16
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=odoo16
+      - POSTGRES_PASSWORD=odoo16
+      - POSTGRES_USER=odoo16
+    ports:
+      - "5435:5432"
+    # restart: always

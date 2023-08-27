@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="rds_market.list">
+      <field name="name">rds_market list</field>
+      <field name="model">rds_market.rds_market</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="rds_market.action_window">
+      <field name="name">rds_market window</field>
+      <field name="res_model">rds_market.rds_market</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="rds_market.action_server">
+      <field name="name">rds_market server</field>
+      <field name="model_id" ref="model_rds_market_rds_market"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="rds_market" id="rds_market.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="rds_market.menu_1" parent="rds_market.menu_root"/>
+    <menuitem name="Menu 2" id="rds_market.menu_2" parent="rds_market.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="rds_market.menu_1_list" parent="rds_market.menu_1"
+              action="rds_market.action_window"/>
+    <menuitem name="Server to list" id="rds_market" parent="rds_market.menu_2"
+              action="rds_market.action_server"/>
+    -->
+  </data>
+</odoo>

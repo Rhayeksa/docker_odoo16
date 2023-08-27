@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="customer_view_tree" model="ir.ui.view">
+            <field name="name">customer.view.tree</field>
+            <field name="model">rds_market.customer</field>
+            <field name="arch" type="xml">
+                <tree string="Customer List">
+                    <field name="name" string="Name" />
+                    <field name="phone" string="Phone" />
+                    <field name="address" string="Address" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="customer_view_form" model="ir.ui.view">
+            <field name="name">customer.view.form</field>
+            <field name="model">rds_market.customer</field>
+            <field name="arch" type="xml">
+                <form string="Customer Form">
+                    <sheet>
+                        <group>
+                            <field name="name" string="Name" />
+                            <field name="phone" string="Phone" />
+                            <field name="address" string="Address" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="customer_action" model="ir.actions.act_window">
+            <field name="name">Customer</field>
+            <field name="res_model">rds_market.customer</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p name="o_view_nocontent_smiling_faces"></p>
+            </field>
+        </record>
+
+    </data>
+</odoo>
